@@ -51,10 +51,8 @@ section {
   -webkit-box-shadow: 0px 0px 0px #272b2f00, 0px 0px 0px #7c7e8000;
           box-shadow: 0px 0px 0px #272b2f00, 0px 0px 0px #7c7e8000;
   opacity: 0;
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   /* width */
 }
 
@@ -155,8 +153,8 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -webkit-box-shadow: 0px 0px 0px #272b2f00, 0px 0px 0px #7c7e8000;
           box-shadow: 0px 0px 0px #272b2f00, 0px 0px 0px #7c7e8000;
 }
@@ -324,8 +322,6 @@ section {
 .accio.show {
   -webkit-box-shadow: 6px 6px 12px #272b2f, -6px -6px 12px #7c7e80;
           box-shadow: 6px 6px 12px #272b2f, -6px -6px 12px #7c7e80;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
   opacity: 1;
 }
 
