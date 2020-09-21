@@ -1,0 +1,218 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,600;0,700;0,900;1,200;1,300&family=Oswald:wght@200;400;500&display=swap');
+
+// $background : #0e1113;
+$background : #dcdce0;
+// $background : #23231F;
+
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+#character-card {
+	min-height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $background;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	.btn {
+		min-width: 60px;
+		height: 60px;
+		border-radius: 20px;
+		background: #fff;
+		border: 0px;
+		outline: none;
+		cursor: pointer;
+		z-index: 200;
+		margin: 10px;
+		box-shadow: 0px 17px 35px 0px rgba(0, 0, 0, .07);
+		transition: all .25s ease;
+
+		i {
+			font-size: 1.6rem;
+		}
+	}
+
+	.btn:hover {
+		transform: translate(0, -10px);
+		box-shadow: 0px 17px 35px 0px rgba(0, 0, 0, .07);
+	}
+
+	.con-cards {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+		overflow: auto;
+		padding-top: 100px;
+		padding-left: 60px;
+		padding-right: 50px;
+		scroll-behavior: smooth;
+
+		border-radius: 30px;
+
+		.card {
+			width: 200px;
+			min-width: 200px;
+			height: auto;
+			background: #fff;
+			border-radius: 30px;
+			position: relative;
+			z-index: 10;
+			margin: 25px;
+			transition: all .25s ease;
+			box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .08);
+			cursor: pointer;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+
+			.con-img {
+				// transform: translate(0, -90px);
+				width: calc(100% - 60px);
+				margin: 0px 30px;
+				margin-top: -90px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: all .35s ease-out;
+
+				img {
+					height: 200px;
+				}
+
+				img.blur {
+					position: absolute;
+					filter: blur(15px);
+					z-index: -1;
+					opacity: .35;
+					transform: translate(-10px, 10px) scale(.85);
+					transition: all .35s ease-out;
+				}
+			}
+
+			.con-text {
+				padding: 10px 20px 20px;
+
+				h2 {
+					font-family: 'Oswald', sans-serif;
+				}
+
+				p {
+					font-family: 'Montserrat', sans-serif;
+					font-family: 0.8em;
+					opacity: .6;
+					margin-top: 10px;
+				}
+			}
+
+			h3 {
+				position: absolute;
+				font-family: 'Oswald', sans-serif;
+				left: 0px;
+				top: 0px;
+				padding: 15px;
+			}
+
+			i.bx {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				padding: 15px;
+				font-size: 1.3rem;
+			}
+		}
+
+		.card:hover {
+			transform: translate(0, -10px);
+			box-shadow: 0px 17px 35px 0px rgba(0, 0, 0, .07);
+
+			.con-img {
+				transform: translate(0, -15px);
+
+				img.blur {
+					opacity: .45;
+					transform: translate(-10px, 26px) scale(.85);
+				}
+			}
+		}
+
+	}
+
+	.con-cards::-webkit-scrollbar {
+		height: 0px !important;
+	}
+
+	.con-cards::after {
+		content: '';
+		display: block;
+		min-width: 20px;
+		height: 100px;
+		position: relative;
+	}
+
+
+}
+
+.content::after {
+	content: '';
+	position: absolute;
+	left: 80px;
+	height: 100%;
+	width: 150px;
+	z-index: 100;
+	background: linear-gradient(90deg, $background, rgba(220, 220, 224, 0) 100%);
+	pointer-events: none;
+}
+
+.content::before {
+	content: '';
+	position: absolute;
+	right: 80px;
+	width: 150px;
+	height: 100%;
+	z-index: 100;
+	background: linear-gradient(90deg, rgba(220, 220, 224, 0) 0%, $background);
+	pointer-events: none;
+}
+
+@media (max-width: 440px) {
+	.content {
+		.con-cards {
+			padding-left: 0px;
+			padding-right: 50px;
+
+		}
+
+		.btn {
+			display: none;
+		}
+	}
+
+	.content::after {
+		left: 0;
+	}
+
+	.content::before {
+		right: 0;
+	}
+
+}
+
+// instagram > @richwebdeveloper

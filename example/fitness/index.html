@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='css/styletest.css' rel='stylesheet' type='text/css' />
+	<title>Test Example</title>
+</head>
+
+<body>
+	<div class="fixed">
+		<div class="container">
+			<nav id="nav">
+				<button id="navmenu">
+					<div class="lines">
+						<div class="bars"></div>
+						<div class="bars"></div>
+						<div class="bars"></div>
+					</div>
+				</button>
+				<div>
+					<h2 class="logo">Fitness</h2>
+				</div>
+
+				<ul id="navmenulist" class="close">
+					<li><a id="navmenuitem">Home</a></li>
+					<li><a id="navmenuitem">About</a></li>
+					<li><a id="navmenuitem">Pricing</a></li>
+					<li><a id="navmenuitem">Contact</a></li>
+					<!-- <li><a id="navmenuitem" href="">Iure!</a></li> -->
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<section id="header" class="navspace100vh" style="background-color: #412a92;">
+		<div class="content">
+			<div class="container">
+				<div class="title">
+					<h1><b>Be Stronger</b></h1>
+					<h1>Than Your <b>Excuses.</b></h1>
+				</div>
+				<div class="paragraph">
+					<p>“The last three or four reps is what makes the muscle grow. This area of pain divides a champion
+						from someone who is not a champion.”</p>
+				</div>
+				<div class="button">
+					<a>JOIN NOW!</a>
+				</div>
+			</div>
+		</div>
+		<div class="images">
+			<img class="img1" src="image1.svg" alt="">
+			<img class="img2" src="image2.svg" alt="">
+			<img class="img3" src="image3.svg" alt="">
+		</div>
+	</section>
+
+	<!-- <section id="testDiv" style="height: 100vh;"></section>
+	<section id="testDiv2" style="height: 100vh;"></section> -->
+</body>
+
+<script>
+	document.getElementById("navmenu").addEventListener("click", function () {
+		const x = document.getElementById("navmenulist").classList.contains("close");
+
+		if (x == true) {
+			document.getElementById("navmenulist").classList.remove("close");
+		} else {
+			document.getElementById("navmenulist").classList.add("close");
+		}
+	});
+	document.getElementById("navmenuitem").addEventListener("click", function () {
+		document.getElementById("navmenulist").classList.add("close");
+	});
+
+	window.onscroll = function () {
+		const headheight = document.getElementById("header").offsetHeight - 100;
+
+		if (document.body.scrollTop > headheight || document.documentElement.scrollTop > headheight) {
+			document.getElementById("nav").className = "color";
+		} else {
+			document.getElementById("nav").className = "";
+		}
+
+	};
+
+</script>
+
+</html>
