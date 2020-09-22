@@ -1,0 +1,363 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: #00000000;
+}
+
+html {
+  /* width */
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+body {
+  background: #5a5a5a;
+}
+
+section {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accio {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: calc(100% - 40px);
+  height: 100%;
+  max-height: calc(100% - 40px);
+  overflow-y: scroll;
+  border-radius: 5vw;
+  background: #5a5a5a;
+  -webkit-box-shadow: 0px 0px 0px #272b2f00, 0px 0px 0px #7c7e8000;
+          box-shadow: 0px 0px 0px #272b2f00, 0px 0px 0px #7c7e8000;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  /* width */
+}
+
+.accio:hover .accio-face::before {
+  opacity: 0;
+}
+
+.accio::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.accio .accio-face {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  background-position: top center;
+  background-size: cover;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.accio .accio-face::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.3;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.accio .accio-back {
+  width: 100%;
+  height: 60%;
+  min-height: 205px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+.accio .accio-back .iconwrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 395px;
+}
+
+.accio .accio-back .iconwrap .frame {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  border-radius: 30%;
+  margin: 15px;
+}
+
+.accio .accio-back .iconwrap .frame a {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 35%;
+  background-size: 100%;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-box-shadow: 0px 0px 0px #272b2f00, 0px 0px 0px #7c7e8000;
+          box-shadow: 0px 0px 0px #272b2f00, 0px 0px 0px #7c7e8000;
+}
+
+.accio .accio-back .iconwrap .frame a .icon-hover {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border-radius: 35%;
+  background-size: 100%;
+  background-position: center;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.accio .accio-back .iconwrap .frame a .icon-hover .icon-instagram {
+  width: 100%;
+  height: 100%;
+  background-size: 90% auto;
+  background-position: center;
+}
+
+.accio .accio-back .iconwrap .frame a .tooltipwrap {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 13px;
+  width: calc(100% - 26px);
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.accio .accio-back .iconwrap .frame a .tooltipwrap .tooltip {
+  position: relative;
+  background-color: #7a7a7a;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 25px;
+  pointer-events: none;
+  -webkit-box-shadow: 0px 10px 10px rgba(18, 18, 18, 0.35);
+          box-shadow: 0px 10px 10px rgba(18, 18, 18, 0.35);
+}
+
+.accio .accio-back .iconwrap .frame a .tooltipwrap .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #7a7a7a;
+  top: calc(100% - 5px);
+  left: calc(50% - 10px);
+  -webkit-transform: translateX(50%) rotate(45deg);
+          transform: translateX(50%) rotate(45deg);
+}
+
+.accio .accio-back .iconwrap .frame a:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 6px 6px 12px #272b2f, -6px -6px 12px #7c7e80;
+          box-shadow: 6px 6px 12px #272b2f, -6px -6px 12px #7c7e80;
+}
+
+.accio .accio-back .iconwrap .frame a:hover .icon-hover {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.accio .accio-back .iconwrap .frame a:hover .tooltipwrap {
+  top: -40px;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.accio .accio-back .iconwrap .frame .phone {
+  background-image: url(../img/icon/phone.svg);
+}
+
+.accio .accio-back .iconwrap .frame .phone .icon-hover {
+  background-image: url(../img/icon/phone-hover.svg);
+  background-color: #299745;
+}
+
+.accio .accio-back .iconwrap .frame .whatsapp {
+  background-image: url(../img/icon/whatsapp.svg);
+}
+
+.accio .accio-back .iconwrap .frame .whatsapp .icon-hover {
+  background-image: url(../img/icon/whatsapp-hover.svg);
+  background-color: #4FCE5D;
+}
+
+.accio .accio-back .iconwrap .frame .gmail {
+  background-image: url(../img/icon/gmail.svg);
+}
+
+.accio .accio-back .iconwrap .frame .gmail .icon-hover {
+  background-image: url(../img/icon/gmail-hover2.svg);
+  background-color: #f14336;
+}
+
+.accio .accio-back .iconwrap .frame .facebook {
+  background-image: url(../img/icon/facebook.svg);
+}
+
+.accio .accio-back .iconwrap .frame .facebook .icon-hover {
+  background-image: url(../img/icon/facebook-hover.svg);
+  background-color: #3b5998;
+}
+
+.accio .accio-back .iconwrap .frame .twitter {
+  background-image: url(../img/icon/twitter.svg);
+}
+
+.accio .accio-back .iconwrap .frame .twitter .icon-hover {
+  background-image: url(../img/icon/twitter-hover.svg);
+  background-color: #00acee;
+}
+
+.accio .accio-back .iconwrap .frame .instagram {
+  background-image: url(../img/icon/instagram.svg);
+}
+
+.accio .accio-back .iconwrap .frame .instagram .icon-hover {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.accio .accio-back .iconwrap .frame .instagram .icon-hover .icon-instagram {
+  background-image: url(../img/icon/instagram-hover.svg);
+}
+
+.accio .home-link {
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+  height: 6px;
+  margin: 8px 35%;
+  z-index: 12;
+  border-radius: 10px;
+  background-color: #02020246;
+  overflow: hidden;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.accio.show {
+  -webkit-box-shadow: 6px 6px 12px #272b2f, -6px -6px 12px #7c7e80;
+          box-shadow: 6px 6px 12px #272b2f, -6px -6px 12px #7c7e80;
+  opacity: 1;
+}
+
+.accio.show .accio-back {
+  opacity: 1;
+}
+
+@media (min-width: 600px) {
+  .accio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 700px;
+    max-height: 300px;
+    border-radius: 30px;
+    margin: 40px;
+  }
+  .accio .accio-face {
+    width: 50%;
+    height: 100%;
+  }
+  .accio .accio-back {
+    width: 50%;
+    height: 100%;
+    min-height: 205px;
+  }
+  .accio .accio-back .iconwrap {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=accio.css.map */
