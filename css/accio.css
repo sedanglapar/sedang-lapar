@@ -253,6 +253,7 @@ section {
 
 .accio .accio-back .iconwrap .frame .phone .icon-hover {
   background-image: url(../img/icon/phone-hover.svg);
+  background: #5a5a5a;
 }
 
 .accio .accio-back .iconwrap .frame .whatsapp {
@@ -261,6 +262,7 @@ section {
 
 .accio .accio-back .iconwrap .frame .whatsapp .icon-hover {
   background-image: url(../img/icon/whatsapp-hover.svg);
+  background: #5a5a5a;
 }
 
 .accio .accio-back .iconwrap .frame .gmail {
@@ -269,6 +271,7 @@ section {
 
 .accio .accio-back .iconwrap .frame .gmail .icon-hover {
   background-image: url(../img/icon/gmail-hover2.svg);
+  background: #5a5a5a;
 }
 
 .accio .accio-back .iconwrap .frame .facebook {
@@ -277,6 +280,7 @@ section {
 
 .accio .accio-back .iconwrap .frame .facebook .icon-hover {
   background-image: url(../img/icon/facebook-hover.svg);
+  background: #5a5a5a;
 }
 
 .accio .accio-back .iconwrap .frame .twitter {
@@ -285,10 +289,15 @@ section {
 
 .accio .accio-back .iconwrap .frame .twitter .icon-hover {
   background-image: url(../img/icon/twitter-hover.svg);
+  background: #5a5a5a;
 }
 
 .accio .accio-back .iconwrap .frame .instagram {
   background-image: url(../img/icon/instagram.svg);
+}
+
+.accio .accio-back .iconwrap .frame .instagram .icon-hover {
+  background: #5a5a5a;
 }
 
 .accio .accio-back .iconwrap .frame .instagram .icon-hover .icon-instagram {
