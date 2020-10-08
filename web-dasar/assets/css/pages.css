@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,900;1,100;1,200;1,400;1,800;1,900&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat',
+    sans-serif;
+  color: #f1f1f1;
+}
+
+body {
+  background-color: #2d383c;
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+article {
+  margin: 50px 0 0 0;
+}
+
+hr {
+  opacity: .7;
+}
+
+.article-content {
+  width: 100%;
+  margin: 25px 0 0 0;
+  text-align: center;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content p,
+.article-content ul {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.article-content p {
+  text-indent: 4em;
+}
+
+.article-content ul {
+  list-style: disc;
+  margin-left: 4em;
+}
+
+.article-content table {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.article-content table tr th,
+.article-content table tr td {
+  border: none;
+  padding: 5px 10px;
+}
+
+.article-content table tr th {
+  text-align: right;
+}
+
+.article-content table tr td {
+  text-align: left;
+}
+
+.article-content table tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+figure {
+  max-width: 700px;
+  padding: 15px;
+  border-radius: 12px;
+  margin: auto;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+figure img {
+  max-width: 100%;
+}
+
+figure figcaption {
+  margin: 10px 0 0 0;
+  font-size: .85em;
+  font-weight: 500;
+  opacity: .7;
+  color: black;
+}
+
+figure.half {
+  max-width: 40%;
+}
+
+figure.half:nth-child(odd) {
+  float: left;
+  margin-right: 20px;
+}
+
+figure.half:nth-child(even) {
+  float: right;
+  margin-left: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.title h1 {
+  font-size: 2.5em;
+}
+
+.title p {
+  opacity: .5;
+  font-size: .9em;
+}
+
+.modal {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.modal img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.modal.open {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+footer {
+  margin: 0 0 50px 0;
+}
+
+footer p {
+  margin: 15px 0;
+}
+
+#upBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 15px;
+  background: #414c50;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+#upBtn:active {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+#upBtn.visible {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#upBtn svg {
+  width: 100%;
+  height: 100%;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+#upBtn svg .str0 {
+  stroke: #EBEBE7;
+  stroke-width: 19.9961;
+}
+
+#upBtn svg .fil0 {
+  fill: #EBEBE7;
+}
+
+@media (max-width: 600px) {
+  figure.half {
+    max-width: 700px;
+  }
+
+  figure.half:nth-child(odd),
+  figure.half:nth-child(even) {
+    float: none;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

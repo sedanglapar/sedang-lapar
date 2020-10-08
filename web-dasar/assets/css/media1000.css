@@ -1,0 +1,130 @@
+@media (min-width: 402px) {
+  #kontak .sns .sns-container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  #navbar .toggle {
+    display: none;
+  }
+  #navbar nav {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+    height: auto;
+  }
+  #navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #kontak .form .form-card {
+    padding: 25px 40px;
+  }
+  #kontak .form .form-card.show {
+    padding: 25px 40px;
+  }
+  aside article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  aside article header {
+    width: 200px;
+  }
+  aside article header img {
+    width: 100%;
+  }
+  aside article section {
+    padding: 0 25px;
+    width: calc(100% - 200px);
+  }
+  aside article section h3 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 722px) {
+  #gallery .container .cards-container {
+    max-width: 680px;
+  }
+}
+
+@media (min-width: 768px) {
+  .box {
+    width: 50%;
+    max-width: 50%;
+    text-align: left;
+  }
+  #section1 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #section1 .box {
+    width: auto;
+  }
+  #section1 .logo {
+    width: 30%;
+  }
+  #section1 .logo .logo-wrap {
+    width: 150px;
+    height: 150px;
+    margin: 0 0 0 auto;
+  }
+  #section1 .text {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 70%;
+    margin: auto auto auto 0;
+    text-align: left;
+  }
+  #section2 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #section2 .img {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  #section2 .img .main-image {
+    width: 80%;
+    margin: auto;
+  }
+  #gallery .modal-frame {
+    top: 40px;
+    width: calc(100% - 250px);
+    height: calc(100vh - 80px);
+  }
+}
+
+@media (min-width: 1060px) {
+  #gallery .container .cards-container {
+    max-width: 1021px;
+  }
+}
+
+@media (max-width: 416px) {
+  #section1 .text .button a {
+    display: block;
+  }
+}
+/*# sourceMappingURL=media1000.css.map */
