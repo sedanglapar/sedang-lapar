@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW X8 -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.15333in" height="0.666661in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 1153 667"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.19999in" height="0.693331in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1200 693"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
@@ -13,8 +13,6 @@ viewBox="0 0 1153 667"
  </defs>
  <g id="Layer_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g>
-   <path class="fil0" d="M1153 35l-83 49 83 48 0 70 -144 -83 -83 48 227 131 0 70 -15 -8 0 0 -15 -9 0 0 -258 -149 -84 48 372 215 0 70 -432 -250 -84 48 387 224 0 0 129 74 0 35 -60 0 0 0 -84 -48 -83 48 -122 0 145 -83 -84 -48 -228 131 -121 0 45 -26 0 0 15 -9 1 0 227 -131 -83 -49 -273 158 -1 0 -98 57 -121 0 189 -109 0 0 243 -140 -83 -49 -274 158 0 0 -5 3 0 0 -238 137 1 0 -61 0 0 -35 0 -96 0 -70 144 83 84 -48 -228 -132 0 -70 0 1 0 0 15 8 0 0 273 158 20 -11 64 -38 -243 -140 0 0 -129 -74 0 -70 160 92 -1 0 274 158 83 -49 -238 -137 0 0 -5 -3 0 0 -273 -158 0 0 0 -35 61 0 83 49 84 -49 121 0 -144 84 29 17 33 19 21 12 228 -132 121 0 -30 18 0 0 -15 9 0 0 -243 140 83 48 372 -215 122 0 -433 250 52 30 32 18 0 0 0 0 129 -74 0 0 387 -224 60 0 0 35 0 0zm-1151 596l82 -48 -84 -48 2 96zm-2 0l0 0 0 0z"/>
-  </g>
+  <polygon class="fil0" points="846,693 997,606 900,551 653,693 546,693 847,520 750,464 353,693 246,693 697,433 600,377 53,693 -3,693 -3,664 97,606 -3,549 -3,487 150,576 247,520 -3,376 -3,314 300,489 397,433 -3,202 -3,141 450,403 547,347 -3,29 -3,0 53,0 150,56 247,0 354,0 203,87 300,143 547,0 654,0 353,173 450,229 847,0 954,0 503,260 600,316 1147,0 1200,0 1200,31 1103,87 1200,143 1200,204 1050,118 953,173 1200,316 1200,377 900,204 803,260 1200,489 1200,551 750,291 653,347 1200,662 1200,693 1147,693 1050,637 953,693 "/>
  </g>
 </svg>
